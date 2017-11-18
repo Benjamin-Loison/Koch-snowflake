@@ -1,2 +1,2 @@
 # Koch-snowflake
-Python - Koch snowflake with basic mathematic notions
+Python/Basic(TI-Casio) - Koch snowflake with basic mathematic notions
