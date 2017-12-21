@@ -1,0 +1,95 @@
+Filename:BOCHPART
+If θ!=42
+Then "A"?->A:"B"?->B
+"C"?->C:"D"?->D:"M"?->M
+IfEnd
+0->θ
+
+2->U
+For 1->N To M
+U+3*4^(N-1)->U
+Next
+
+U->Dim List 2
+U->Dim List 3
+A->List 2[1
+B->List 3[1
+C->List 2[U
+D->List 3[U
+
+For 1->H To M
+
+1->P:2->Q
+While Q=U
+
+If List 2[Q]!=0
+Then 
+
+List 2[P->A
+List 3[P->B
+List 2[Q->C
+List 3[Q->D
+
+Min({A,C})->Y
+Max({A,C})-Y->K
+
+If Y=A
+Then 1->Z:2->V
+Else 2->Z:1->V
+IfEnd
+
+RndFix(Y+(ZK/3),0)->A
+RndFix(Y+(VK/3),0)->C
+
+Min({B,D})->Y
+Max({B,D})-Y->K
+
+If Y=B
+Then 1->Z:2->V
+Else 2->Z:1->V
+IfEnd
+
+RndFix(Y+(ZK/3),0)->B
+RndFix(Y+(VK/3),0)->D
+
+(Q-P)(1/4)+P->W
+A->List 2[W
+B->List 3[W
+(Q-P)(3/4)+P->W
+C->List 2[W
+D->List 3[W
+
+(A+C)/2->I
+(B+D)/2->J
+
+√((A-I)²+(B-J)²)->R
+
+A-I->E
+B-J->F
+
+Rad
+cos^-1 (E/R)->θ
+
+J+Rsin θ->G
+
+G!=B×-θ->θ
+
+-π/2+θ->θ
+
+√((3/4)(2R)²)->S
+
+RndFix(I+Scos θ,0)->Z
+RndFix(J+Ssin θ,0)->V
+
+(Q-P)(2/4)+P->W
+Z->List 2[W
+V->List 3[W
+
+Q->P
+
+IfEnd
+Isz Q
+
+WhileEnd
+
+Next

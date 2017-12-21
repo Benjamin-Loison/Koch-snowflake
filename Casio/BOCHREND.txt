@@ -1,0 +1,57 @@
+Filename:BOCHREND
+0×63 31 30 3 1
+Prog "~SETGRAP"
+7->Dim List 1
+"A"?->A:"B"?->B
+"R"?->R:"D"?->D
+"M"?->M:"E"?->E
+
+A->List 1[1
+B->List 1[2
+R->List 1[3
+D->List 1[4
+M->List 1[5
+E->List 1[6
+1->List 1[7
+
+Cls
+While List 1[7]<4
+
+List 1[1->A
+List 1[2->B
+List 1[3->R
+List 1[4->D
+List 1[5->M
+
+2πÁ3->G
+
+List 1[7->I
+A+Rcos (D+GI)->J
+B+Rsin (D+GI)->K
+A+Rcos (D+G(I+1))->A
+B+Rsin (D+G(I+1))->B
+
+J->C:K->D
+
+RndFix(A,0->A
+RndFix(B,0->B
+RndFix(C,0->C
+RndFix(D,0->D
+
+42->θ
+Prog "BOCHPART"
+
+42->θ
+If List 1[6]=0
+Then Prog "BOCHVISU"
+Else Prog "BOCHVIS3"
+IfEnd
+
+List 1[7]+1->List 1[7]
+
+WhileEnd
+
+While Getkey=0
+WhileEnd
+
+Prog "~SETBACK"

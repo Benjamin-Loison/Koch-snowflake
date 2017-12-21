@@ -1,0 +1,12 @@
+Filename:BOCHVISU
+θ!=42=>Cls
+0->θ
+
+Dim List 2->X
+63->r
+
+For 1->I To X
+
+PlotOn List 2[I,r-List 3[I
+
+Next

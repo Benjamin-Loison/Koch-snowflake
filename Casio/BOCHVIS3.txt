@@ -1,0 +1,22 @@
+Filename:BOCHVIS3
+θ!=42=>Cls
+0->θ
+
+Dim List 2->X
+
+63->r
+
+For 1->R To 3
+
+For 1->I To X-1
+
+List 2[I->A
+r-List 3[I->B
+List 2[I+1->C
+r-List 3[I+1->D
+
+F-Line A,B,C,D
+
+Next
+
+Next
