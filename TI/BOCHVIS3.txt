@@ -1,0 +1,20 @@
+If θ≠42:EffDess
+0→θ
+
+dim(L2→X
+
+For(R,1,3
+
+For(I,1,X-1
+
+L2(I→A
+164-L3(I→B
+
+L2(I+1→C
+164-L3(I+1→D
+
+Ligne(A,B,C,D
+
+End
+
+End

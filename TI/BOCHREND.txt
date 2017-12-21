@@ -1,0 +1,41 @@
+7→dim(L1
+Prompt A,B,R,D,M,E
+A→L1(1:B→L1(2
+R→L1(3:D→L1(4
+M→L1(5:E→L1(6
+1→L1(7
+
+EffDess
+While L1(7)<4
+
+L1(1→A:L1(2→B
+L1(3→R:L1(4→D
+L1(5→M
+
+2π/3→G
+
+L1(7→I
+A+Rcos(D+GI)→J
+B+Rsin(D+GI)→K
+A+Rcos(D+G(I+1))→A
+B+Rsin(D+G(I+1))→B
+
+J→C:K→D
+
+arrondir(A,0→A
+arrondir(B,0→B
+arrondir(C,0→C
+arrondir(D,0→D
+
+42→θ
+prgmBOCHPART
+
+42→θ
+If L1(6)=0
+Then:prgmBOCHVISU
+Else:prgmBOCHVIS3
+End
+
+L1(7)+1→L1(7
+
+End

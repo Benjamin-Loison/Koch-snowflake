@@ -1,0 +1,85 @@
+If θ≠42:Prompt A,B,C,D,M
+0→θ
+
+2→U
+For(N,1,M
+U+3*4^(N-1)→U
+End
+
+DelVar L2
+DelVar L3
+U→dim(L2
+U→dim(L3
+A→L2(1:B→L3(1
+C→L2(U:D→L3(U
+
+For(H,1,M
+
+1→P:2→Q
+While Q≤U
+
+If L2(Q)≠0
+Then
+
+L2(P→A:L3(P→B
+L2(Q→C:L3(Q→D
+
+min(A,C)→Y
+max(A,C)-Y→K
+
+If Y=A
+Then:1→Z:2→V
+Else:2→Z:1→V
+End
+
+arrondir(Y+(ZK/3),0)→A
+arrondir(Y+(VK/3),0)→C
+
+min(B,D)→Y
+max(B,D)-Y→K
+
+If Y=B
+Then:1→Z:2→V
+Else:2→Z:1→V
+End
+
+arrondir(Y+(ZK/3),0)→B
+arrondir(Y+(VK/3),0)→D
+
+(Q-P)(1/4)+P→W
+A→L2(W:B→L3(W
+(Q-P)(3/4)+P→W
+C→L2(W:D→L3(W
+
+(A+C)/2→I
+(B+D)/2→J
+
+√((A-I)²+(B-J)²)→R
+
+A-I→E
+B-J→F
+
+Radian
+cos(E/R)→θ
+J+Rsin(θ)→G
+
+If G≠B:­θ→θ
+
+­π/2+θ→θ
+
+√(3/4(2R)²)→S
+
+arrondir(I+Scos(θ),0)→Z
+arrondir(J+Ssin(θ),0)→V
+
+(Q-P)(2/4)+P→W
+Z→L2(W:V→L3(W
+
+Q→P
+
+End
+Q+1→Q
+
+End
+
+End

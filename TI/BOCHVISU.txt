@@ -1,0 +1,10 @@
+If θ≠42:EffDess
+0→θ
+
+dim(L2→X
+
+For(I,1,X
+
+Pxl-Aff(L3(I),L2(I
+
+End
