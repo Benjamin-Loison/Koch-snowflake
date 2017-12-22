@@ -60,7 +60,7 @@ A-I→E
 B-J→F
 
 Radian
-cos(E/R)→θ
+cos^-1(E/R)→θ
 J+Rsin(θ)→G
 
 If G≠B:­θ→θ
