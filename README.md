@@ -1,7 +1,7 @@
 # Koch snowflake
 Python/Basic (TI/Casio) - Koch snowflake with basic mathematic notions
 
-Playlist de 3 épisodes expliquant la démarche/code: https://www.youtube.com/watch?v=boiX1U-RyoE&list=PLiJOYdwXbxtbUuo2ggbXZUJj9NrFPddgl
+Playlist of 3 episodes explaining the method/code: https://www.youtube.com/playlist?list=PLKAl8tt2R8OfMnDRnEABZ2M-tI7yJYvl1
 
 Python:
 
